@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gs1"
+    tools:context="com.enesileri.gssozleri.MainActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/reklam"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+    <Button
+        android:id="@+id/önceki"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buton"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:text="ÖNCEKİ"
+        android:textStyle="bold"
+        android:layout_above="@+id/reklam"
+        android:layout_alignLeft="@+id/sözler"
+        android:layout_alignStart="@+id/sözler" />
+
+    <Button
+        android:id="@+id/paylas"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buton"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:text="PAYLAŞ"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/sözler"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sonraki"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buton"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:text="SONRAKİ"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/reklam"
+        android:layout_alignRight="@+id/reklam"
+        android:layout_alignEnd="@+id/reklam" />
+
+    <TextView
+        android:id="@+id/sözler"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginBottom="124dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="HOŞGELDİNİZ !"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:visibility="visible"
+        android:layout_above="@+id/önceki"
+        android:layout_alignLeft="@+id/reklam"
+        android:layout_alignStart="@+id/reklam"
+        android:layout_alignRight="@+id/sonraki"
+        android:layout_alignEnd="@+id/sonraki" />
+
+</RelativeLayout>
